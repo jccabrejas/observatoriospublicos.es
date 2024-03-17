@@ -28,6 +28,10 @@ const scopes = [
     name: 'Madrid',
   },
   {
+    key: 'murcia',
+    name: 'Murcia',
+  },
+  {
     key: 'pais-vasco',
     name: 'País Vasco',
   },
@@ -118,35 +122,9 @@ const observatories = [
   },
   {
     name: 'Observatorio de Igualdad de Oportunidades entre Mujeres y Hombres',
-    website:
-      'https://www.inmujeres.gob.es/observatorios/observIgualdad/home.htm',
-    type: 'public',
-    scope: 'estatal',
-    parents: ['Ministerio de Igualdad', 'Instituto de las Mujeres'],
-    docs: [
-      {
-        name: 'Real Decreto 1686/2000, de 6 de octubre, por el que se crea el Observatorio de la Igualdad de Oportunidades entre mujeres y hombres',
-        url: 'https://www.inmujeres.gob.es/observatorios/observIgualdad/docs/realDecreto.pdf',
-      },
-    ],
-  },
-  {
-    name: 'Observatorio de la Imagen de las Mujeres',
-    website: 'https://www.inmujeres.gob.es/observatorios/observImg/home.htm',
-    type: 'public',
-    scope: 'estatal',
-    parents: ['Ministerio de Igualdad', 'Instituto de las Mujeres'],
   },
   {
     name: 'Observatorio de la Cadena Alimentaria',
-    website:
-      'https://www.mapa.gob.es/es/alimentacion/temas/observatorio-cadena/organizacion-y-estructura/',
-    parents: [
-      'Dirección General de la Industria Alimentaria',
-      'Ministerio de Agricultura, Pesca y Alimentación',
-    ],
-    scope: 'estatal',
-    type: 'public',
   },
   {
     name: 'Observatorio de la Ciencia Ciudadana',
@@ -194,12 +172,6 @@ const observatories = [
   },
   {
     name: 'Observatorio de Museos de España',
-    website:
-      'https://www.cultura.gob.es/observatorio-museos-espana/el-observatorio-de-museos-de-espana.html',
-    parents: ['Ministerio de Cultura'],
-    scope: 'estatal',
-    type: 'public',
-    email: 'observatorio.museos@cultura.gob.es',
   },
   {
     name: 'Observatorio de Precios y Mercados de la Junta de Andalucía',
@@ -225,51 +197,27 @@ const observatories = [
   },
   {
     name: 'Observatorio do Sector Lácteo de Galicia',
-    website:
-      'https://fogga.xunta.gal/es/sector_lacteo/observatorio_del_sector_lacteo',
-    scope: 'galicia',
-    type: 'public',
-    docs: [
-      {
-        name: 'Creación en el DOG, 9 de abril de 2007',
-        url: 'https://fogga.xunta.gal/sites/w_fogga/files/ficheiros/pdf/d_61_2007.pdf',
-      },
-    ],
   },
   {
     name: 'Observatorio Español contra la LGBTfobia',
   },
   {
     name: 'Observatorio Español de Acuicultura',
-    website: 'https://www.mapa.gob.es/es/pesca/temas/acuicultura/observatorio/',
   },
   {
     name: 'Observatorio Español de I+D+I (ICONO)',
-  },
-  {
-    name: 'Observatorio de Salud y Medio Ambiente de Andalucía',
-    website: 'https://www.osman.es',
-    scope: 'andalucia',
-    type: 'public',
-    parents: ['Junta de Andalucía', 'Consejería de Salud y Consumo'],
   },
   {
     name: 'Observatorio Español de la Economía Social',
   },
   {
     name: 'Observatorio Español de las Drogas y las Adicciones',
-    type: 'public',
-    scope: 'estatal',
-    parents: ['Ministerio de Sanidad'],
-    website:
-      'https://pnsd.sanidad.gob.es/profesionales/sistemasInformacion/home.htm',
+  },
+  {
+    name: 'Observatorio Español del Mercado del Vino',
   },
   {
     name: 'Observatorio Español del Racismo y la Xenofobia',
-    website: 'https://www.inclusion.gob.es/oberaxe/',
-    parents: ['Ministerio de Inclusión, Seguridad Social y Migraciones'],
-    type: 'public',
-    scope: 'estatal',
   },
   {
     name: 'Observatorio Estatal de Condiciones de Trabajo',
@@ -330,7 +278,7 @@ const observatories = [
     name: 'Observatorio Galego Contra a Discriminación por Orientación Sexual e Identidade de Xénero',
   },
   {
-    name: 'Observatorio Galego da biodiversidade',
+    name: 'observatorio Galego da biodiversidade',
   },
   {
     name: 'Observatorio Galego da Violencia de Xénero',
@@ -349,8 +297,6 @@ const observatories = [
   },
   {
     name: 'Observatorio Nacional 5G',
-    parents: ['Ministerio de Economía'],
-    is_active: 'No',
   },
   {
     name: 'Observatorio Nacional contra el Despoblamiento',
@@ -544,7 +490,7 @@ const observatories = [
     is_active: 'Sí',
   },
   {
-    name: 'Observatorio Permanente de la Inmigración (OPI)',
+    name: 'Observatorio Permanente de la Inmigración (OPI) ',
     website:
       'https://www.inclusion.gob.es/web/opi/estadisticas/observatorio_permanente_inmigracion',
     email: 'sgam@inclusion.gob.es',
@@ -689,6 +635,86 @@ const observatories = [
     scope: 'pais-vasco',
     type: 'public',
   },
-]
+  {
+    name: 'Observatorio para la Convivencia Escolar en Andalucía',
+    website: 'https://www.juntadeandalucia.es/educacion/portals/web/convivencia-escolar/estructura-y-funcionamiento',
+    scope: 'autonómico',
+    type: 'public',
+    },
+    {
+        name: 'OBSERVATORIO PARA LA CONVIVENCIA ESCOLAR',
+        website: 'https://www.carm.es/web/pagina?IDCONTENIDO=5316&RASTRO=c792$m4001&IDTIPO=100',
+        email: 'observatorio.convivencia@murciaeduca.es',
+        parents: ['Subdirección General de Evaluación Educativa y Ordenación Académica',
+        'Dirección General de Recursos Humanos, Planificación Educativa e Innovación',
+        'Consejería de Educación, Formación Profesional y Empleo',
+        'Gobierno de la Región de Murcia'],
+        scope: 'murcia',
+        type: 'public',
+        docs: ['Informe 2022',
+        'Informe 2021',
+        'Informe 2020',
+        'Informe 2019',
+        'Informe 2018',
+        'Informe 2017',
+        'Informe 2016',
+        'Informe 2015',
+        'Informe 2014',
+        'Informe 2013',
+        'Informe 2012',
+        'Informe 2011',
+        'Informe 2010',
+        'Informe 2009',
+        'Informe 2008',
+        'Informe 2007',],
+    },
+    {
+        name: 'OBSERVATORIO DE PREVENCIÓN DE RIESGOS LABORALES',
+        website: 'https://www.carm.es/web/pagina?IDCONTENIDO=740&IDTIPO=140',
+        parents: 'Gobierno de la Región de Murcia',
+        scope: 'murcia',
+        type: 'public',
+        },
+    {
+        name: 'Observatorio Ocupacional',
+        website: 'https://www.carm.es/web/pagina?IDCONTENIDO=227&IDTIPO=200&__PLANT_PERSONALIZADA=/JSP/CARM/carm2018/organigramas/plantillaDetalleOrganigrama.jsp&IDESTRUCTURAJERARQUICA=473&RASTRO=c77$m5782',
+        parents: [
+            'Dirección General del Servicio Regional de Empleo y Formación > Servicio Regional de Empleo y Formación > Organismo Autónomo > Consejería de Educación, Formación Profesional y Empleo > Comunidad Autónoma de la Región de Murcia'],
+        scope: 'murcia',
+        type: 'public',
+        docs: ['Último mes publicado de 2024: Paro, Contratos'],
+        },
+    {
+        name: 'OBSERVATORIO VIRTUAL DEL PAISAJE MEDITERRÁNEO',
+        website: 'https://www.carm.es/web/pagina?IDCONTENIDO=5137&IDTIPO=11&RASTRO=c374$m5828',
+        scope: 'murcia',
+        type: 'public',
+        },
+    {
+        name: 'OBSERVATORIO REGIONAL DE LA DISCAPACIDAD',
+        website: 'https://www.carm.es/web/pagina?IDCONTENIDO=5137&IDTIPO=11&RASTRO=c374$m5828',
+        scope: 'murcia',
+        type: 'public',
+        },
+    {
+        name: 'OBSERVATORIO DE LA CALIDAD DE LOS SERVICIOS DE LA COMUNIDAD AUTÓNOMA DE LA REGIÓN DE MURCIA',
+        website: 'https://transparencia.carm.es/-/observatorio-de-la-calidad-de-los-servicios#gsc.tab=0',
+        scope: 'murcia',
+        type: 'public',
+        docs: ['Acta 2022'],
+        },
+    {
+        name: 'Observatorio de Igualdad',
+        website: 'https://transparencia.carm.es/-/observatorio-de-igualdad#gsc.tab=0',
+        scope: 'murcia',
+        type: 'public',
+        },
+    {
+        name: 'Observatorio Regional contra la Discriminación por Orientación Sexual e Identidad de Género',
+        website: 'https://transparencia.carm.es/-/observatorio-regional-contra-la-discriminacion-por-orientacion-sexual-e-identidad-de-genero-en-la-comunidad-autonoma-de-la-region-de-murcia#gsc.tab=0',
+        scope: 'murcia',
+        type: 'public',
+        },
+    ]
 
 export { observatories, types, scopes }
